@@ -13,7 +13,7 @@ Papa.parse("https://raw.githubusercontent.com/bennett-martin/dno-clase3-04-14/ma
         // necesitamos solo una parte de toda la respuesta
         var datos = respuesta.data;
         // para eliminar una fila de sobra al final, borrar el doble slash en la siguiente línea
-        // datos.pop();
+         datos.pop();
 
         if (document.body.classList.contains("portada")) {
             datos.forEach(function (dato, i) {
